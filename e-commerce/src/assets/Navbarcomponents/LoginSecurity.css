@@ -1,0 +1,63 @@
+/* Security Rows */
+
+.security-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Login Devices */
+
+.login-device {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.login-device:last-child {
+  border-bottom: none;
+}
+
+
+/* Card Hover */
+
+.card {
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12) !important;
+}
+
+
+/* Bootstrap input focus */
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .security-row {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .login-device {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+}

@@ -1,0 +1,130 @@
+/* =========================================
+   FOOTER (content backend se aata hai)
+========================================= */
+
+.site-footer {
+  background: #1b2430;
+  color: #cfd6df;
+  margin-top: 24px;
+}
+
+.site-footer__main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 28px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 36px clamp(16px, 3vw, 40px) 24px;
+}
+
+.footer-col h6 {
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: #cfd6df;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-col--news {
+  grid-column: span 2;
+  min-width: 0;
+}
+
+.footer-col--news p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-news {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-news input {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #3a4656;
+  border-radius: 6px;
+  background: #121922;
+  color: #fff;
+}
+
+.footer-news button {
+  height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-note {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+.footer-note.ok { color: #7ee2a8; }
+.footer-note.bad { color: #ff9b9b; }
+
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px clamp(16px, 3vw, 40px) 20px;
+  border-top: 1px solid #2c3746;
+  font-size: 14px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+}
+
+.footer-copy {
+  color: #8f9bab;
+}
+
+@media (max-width: 575.98px) {
+  .site-footer__main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 24px;
+  }
+
+  .footer-col--news {
+    grid-column: 1 / -1;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

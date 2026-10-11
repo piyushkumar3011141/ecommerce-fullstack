@@ -1,0 +1,397 @@
+/* =====================================
+   FILTER
+===================================== */
+
+.electronics-filter {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.electronics-filter ul {
+  margin-bottom: 15px;
+}
+
+.electronics-filter li {
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+
+.electronics-filter li:hover {
+  color: #0d6efd;
+}
+
+.electronics-filter a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.electronics-filter a:hover {
+  color: #0d6efd;
+}
+
+
+/* =====================================
+   PRODUCT LIST
+===================================== */
+
+.electronics-products {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =====================================
+   PRODUCT
+===================================== */
+
+.electronics-product {
+
+  display: flex;
+
+  width: 100%;
+
+  min-height: 260px;
+
+  padding: 15px 10px;
+
+  margin-bottom: 5px;
+
+  background-color: white;
+
+  border-top: 1px solid #ddd;
+
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* Remove double border */
+
+.electronics-product + .electronics-product {
+  border-top: none;
+}
+
+
+/* =====================================
+   IMAGE BOX
+===================================== */
+
+.electronics-image-box {
+
+  width: 220px;
+
+  min-width: 220px;
+
+  height: 250px;
+
+  background-color: #f7f7f7;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+}
+
+
+/* =====================================
+   IMAGE
+===================================== */
+
+.electronics-image {
+
+  width: 180px;
+
+  height: 230px;
+
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+
+
+/* =====================================
+   BEST SELLER
+===================================== */
+
+.best-seller {
+
+  position: absolute;
+
+  top: 5px;
+
+  left: 5px;
+
+  z-index: 2;
+
+  background-color: #e44d00;
+
+  color: white;
+
+  font-size: 11px;
+
+  padding: 3px 6px;
+
+  border-radius: 3px;
+}
+
+
+/* =====================================
+   DETAILS
+===================================== */
+
+.electronics-details {
+
+  flex: 1;
+
+  padding-left: 15px;
+
+  max-width: 900px;
+}
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+.electronics-title {
+
+  font-size: 18px;
+
+  color: #111;
+
+  margin-top: 5px;
+
+  margin-bottom: 3px;
+
+  line-height: 1.35;
+}
+
+.electronics-title:hover {
+  color: #0d6efd;
+}
+
+
+/* =====================================
+   CATEGORY
+===================================== */
+
+.category-text {
+
+  color: #0d6efd;
+
+  font-weight: 600;
+
+  font-size: 14px;
+}
+
+
+/* =====================================
+   RATING
+===================================== */
+
+.rating {
+
+  font-size: 14px;
+}
+
+.stars {
+
+  color: #ff6500;
+
+  margin-left: 5px;
+
+  letter-spacing: -2px;
+}
+
+.review-count {
+
+  color: #0073bb;
+
+  margin-left: 5px;
+}
+
+
+/* =====================================
+   PRICE
+===================================== */
+
+.electronics-price {
+
+  font-size: 24px;
+
+  font-weight: 500;
+
+  color: #111;
+}
+
+.discount {
+
+  color: #198754;
+
+  font-weight: 500;
+}
+
+
+/* =====================================
+   ADD CART
+===================================== */
+
+.add-cart {
+
+  width: 220px;
+
+  border-radius: 20px;
+
+  border: none;
+
+  padding: 8px 20px;
+}
+
+.add-cart:hover {
+
+  background-color: #ffb000;
+
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 991px) {
+
+  .electronics-filter {
+    padding-right: 10px;
+  }
+
+  .electronics-image-box {
+
+    width: 180px;
+
+    min-width: 180px;
+
+  }
+
+  .electronics-image {
+
+    width: 150px;
+
+    height: 210px;
+
+  }
+
+  .electronics-title {
+
+    font-size: 16px;
+
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 767px) {
+
+  .electronics-filter {
+
+    margin-bottom: 25px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+  }
+
+
+  .electronics-product {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 15px;
+
+  }
+
+
+  .electronics-image-box {
+
+    width: 100%;
+
+    height: 260px;
+
+    margin-bottom: 15px;
+
+  }
+
+
+  .electronics-image {
+
+    width: 190px;
+
+    height: 240px;
+
+  }
+
+
+  .electronics-details {
+
+    width: 100%;
+
+    padding-left: 0;
+
+  }
+
+
+  .electronics-title {
+
+    font-size: 17px;
+
+  }
+
+
+  .add-cart {
+
+    width: 100%;
+
+  }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 576px) {
+
+  .electronics-image-box {
+
+    height: 230px;
+
+  }
+
+
+  .electronics-image {
+
+    width: 160px;
+
+    height: 210px;
+
+  }
+
+
+  .electronics-price {
+
+    font-size: 22px;
+
+  }
+
+}

@@ -1,0 +1,80 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+:root {
+  --header-h: 70px; /* Outletnavbar actual height se update karta hai */
+}
+
+body {
+  background-color: #e7dddd;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Page ke dono side ka gutter (home page sections) */
+.page-gutter {
+  padding-left: clamp(10px, 2vw, 24px);
+  padding-right: clamp(10px, 2vw, 24px);
+}
+
+/* Section heading + "See all" link */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 12px;
+}
+
+.section-title {
+  font-size: clamp(1.25rem, 4.5vw, 1.75rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-link,
+.mc-viewall {
+  color: #e53935;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.section-link:hover,
+.mc-viewall:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   SHARED PRODUCT GRID
+   Home, category, search, related... sab jagah ek hi grid:
+   mobile par 2 columns, badi screen par auto-fill.
+========================================= */
+
+.product-grid,
+.pd-related {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .product-grid,
+  .pd-related {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .product-grid,
+  .pd-related {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}

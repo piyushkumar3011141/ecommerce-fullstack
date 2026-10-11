@@ -1,0 +1,304 @@
+/* ================= FILTER ================= */
+
+.fashion-filter {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.fashion-filter ul {
+  margin-bottom: 15px;
+}
+
+.fashion-filter li {
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+
+.fashion-filter li:hover {
+  color: #0d6efd;
+}
+
+.fashion-filter a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.fashion-filter a:hover {
+  color: #0d6efd;
+}
+
+
+/* ================= PRODUCT LIST ================= */
+
+.fashion-products {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ================= PRODUCT ================= */
+
+.fashion-product {
+  display: flex;
+
+  width: 100%;
+
+  min-height: 250px;
+
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  padding: 15px 10px;
+
+  margin-bottom: 5px;
+
+  background-color: white;
+}
+
+
+/* ================= IMAGE BOX ================= */
+
+.product-image-box {
+  width: 220px;
+  min-width: 220px;
+
+  height: 250px;
+
+  background-color: #f7f7f7;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ================= PRODUCT IMAGE ================= */
+
+.product-image {
+  width: 180px;
+  height: 230px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+}
+
+
+/* ================= BEST SELLER ================= */
+
+.best-seller {
+  position: absolute;
+
+  top: 5px;
+  left: 5px;
+
+  background-color: #e44d00;
+
+  color: white;
+
+  font-size: 11px;
+
+  padding: 3px 6px;
+
+  border-radius: 3px;
+
+  z-index: 2;
+}
+
+
+/* ================= DETAILS ================= */
+
+.product-details {
+  padding-left: 15px;
+
+  flex: 1;
+
+  max-width: 850px;
+}
+
+
+.product-title {
+  font-size: 18px;
+
+  margin-top: 5px;
+  margin-bottom: 3px;
+
+  color: #111;
+}
+
+
+.product-title:hover {
+  color: #0d6efd;
+}
+
+
+/* ================= RATING ================= */
+
+.rating {
+  font-size: 14px;
+}
+
+.stars {
+  color: #ff6500;
+
+  margin-left: 5px;
+
+  letter-spacing: -2px;
+}
+
+.review-count {
+  color: #0073bb;
+
+  margin-left: 5px;
+}
+
+
+/* ================= PRICE ================= */
+
+.product-price {
+  font-size: 24px;
+
+  font-weight: 500;
+
+  color: #111;
+}
+
+
+.discount {
+  color: #198754;
+
+  font-weight: 500;
+}
+
+
+/* ================= ADD CART ================= */
+
+.add-cart-btn {
+  width: 220px;
+
+  border-radius: 20px;
+
+  border: none;
+
+  padding: 8px 20px;
+}
+
+.add-cart-btn:hover {
+  background-color: #ffb000;
+}
+
+
+/* ================= HORIZONTAL LINE ================= */
+
+.fashion-product + .fashion-product {
+  border-top: none;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+  .fashion-filter {
+    padding-right: 10px;
+  }
+
+  .product-image-box {
+    width: 180px;
+    min-width: 180px;
+  }
+
+  .product-image {
+    width: 150px;
+    height: 210px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+  .fashion-filter {
+    margin-bottom: 25px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+  }
+
+
+  .fashion-product {
+    flex-direction: column;
+
+    padding: 15px;
+
+    align-items: center;
+  }
+
+
+  .product-image-box {
+    width: 100%;
+
+    height: 260px;
+
+    margin-bottom: 15px;
+  }
+
+
+  .product-image {
+    width: 190px;
+
+    height: 240px;
+  }
+
+
+  .product-details {
+    width: 100%;
+
+    padding-left: 0;
+  }
+
+
+  .product-title {
+    font-size: 17px;
+  }
+
+
+  .add-cart-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 576px) {
+
+  .product-image-box {
+    height: 230px;
+  }
+
+
+  .product-image {
+    width: 160px;
+    height: 210px;
+  }
+
+
+  .product-price {
+    font-size: 22px;
+  }
+
+}

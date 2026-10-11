@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0px 2% 0px 2%;
+}
+.cards:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(13, 110, 253);
+}
+@media (min-width: 941px) and (max-width: 1261.5px) {
+    .remove1 {
+        display: none !important;
+    }
+}
+.box{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2 , 1fr);
+    padding: 5px 10px 0px 10px;
+}
+
+.mc-row {
+  margin-bottom: 28px;
+}
+
+
+.mc-viewall {
+  text-decoration: none;
+  font-weight: 600;
+  color: #d9534f;
+  font-size: 14px;
+}

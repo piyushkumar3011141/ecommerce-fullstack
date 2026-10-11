@@ -1,0 +1,377 @@
+/* ============================= */
+/* SLIDE SECTION */
+/* ============================= */
+
+.slide-section {
+    width: 100%;
+    padding: 15px 20px 5px;
+
+    background-color: #f5f8fc;
+}
+
+
+/* ============================= */
+/* CAROUSEL */
+/* ============================= */
+
+.slide-section .carousel {
+    width: 100%;
+
+    max-width: 1400px;
+
+    height: 320px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ============================= */
+/* SLIDE ITEM */
+/* ============================= */
+
+.slide-section .carousel-item {
+    height: 320px;
+
+    position: relative;
+}
+
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+.slide-image {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ============================= */
+/* DARK OVERLAY */
+/* ============================= */
+
+.slide-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.72) 0%,
+            rgba(0, 0, 0, 0.48) 35%,
+            rgba(0, 0, 0, 0.12) 75%,
+            rgba(0, 0, 0, 0.02) 100%
+        );
+}
+
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.slide-content {
+    position: absolute;
+
+    top: 50%;
+
+    left: 7%;
+
+    transform: translateY(-50%);
+
+    width: 480px;
+
+    color: white;
+
+    z-index: 2;
+}
+
+
+/* ============================= */
+/* SMALL TEXT */
+/* ============================= */
+
+.slide-small-text {
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+    color: #dbeafe;
+}
+
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.slide-content h1 {
+    margin: 0 0 12px;
+
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* ============================= */
+/* PARAGRAPH */
+/* ============================= */
+
+.slide-content p {
+    margin: 0 0 20px;
+
+    max-width: 430px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #f1f5f9;
+}
+
+
+/* ============================= */
+/* SHOP BUTTON */
+/* ============================= */
+
+.shop-button {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    background-color: #1268e8;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+
+.shop-button:hover {
+    background-color: #075dcc;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* ============================= */
+/* ARROWS */
+/* ============================= */
+
+.slide-arrow {
+    width: 45px;
+
+    height: 45px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    margin: 0 15px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 50%;
+
+    opacity: 0.9;
+
+    transition: all 0.2s ease;
+}
+
+
+.slide-arrow:hover {
+    background-color: white;
+
+    opacity: 1;
+}
+
+
+/* Bootstrap dark carousel icons ko white background par dark banana */
+
+.slide-arrow .carousel-control-prev-icon {
+    filter: invert(1);
+
+    width: 18px;
+
+    height: 18px;
+}
+
+
+.slide-arrow .carousel-control-next-icon {
+    filter: invert(1);
+
+    width: 18px;
+
+    height: 18px;
+}
+
+
+/* ============================= */
+/* INDICATORS */
+/* ============================= */
+
+.slide-section .carousel-indicators {
+    z-index: 5;
+
+    margin-bottom: 12px;
+}
+
+
+.slide-section .carousel-indicators button {
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    border: 0;
+
+    margin: 0 4px;
+
+    opacity: 0.6;
+}
+
+
+.slide-section .carousel-indicators .active {
+    opacity: 1;
+
+    width: 22px;
+
+    border-radius: 10px;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .slide-section {
+        padding: 12px;
+    }
+
+    .slide-section .carousel,
+    .slide-section .carousel-item,
+    .slide-image {
+        height: 290px;
+    }
+
+    .slide-content {
+        left: 7%;
+
+        width: 400px;
+    }
+
+    .slide-content h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .slide-section {
+        padding: 8px;
+    }
+
+    .slide-section .carousel,
+    .slide-section .carousel-item,
+    .slide-image {
+        height: 230px;
+
+        border-radius: 10px;
+    }
+
+    .slide-content {
+        left: 6%;
+
+        width: 70%;
+    }
+
+    .slide-small-text {
+        font-size: 9px;
+
+        letter-spacing: 1.2px;
+
+        margin-bottom: 5px;
+    }
+
+    .slide-content h1 {
+        font-size: 23px;
+
+        line-height: 1.15;
+
+        margin-bottom: 7px;
+    }
+
+    .slide-content p {
+        font-size: 11px;
+
+        line-height: 1.4;
+
+        margin-bottom: 12px;
+    }
+
+    .shop-button {
+        padding: 7px 14px;
+
+        font-size: 11px;
+    }
+
+    .slide-arrow {
+        width: 32px;
+
+        height: 32px;
+
+        margin: 0 7px;
+    }
+
+    .slide-arrow .carousel-control-prev-icon,
+    .slide-arrow .carousel-control-next-icon {
+        width: 13px;
+
+        height: 13px;
+    }
+
+}

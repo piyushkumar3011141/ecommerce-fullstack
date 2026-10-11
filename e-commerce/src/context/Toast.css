@@ -1,0 +1,17 @@
+.app-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 3000;
+  max-width: min(92vw, 420px);
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: #333;
+}
+.app-toast--error { background: #c62828; }
+.app-toast--success { background: #2e7d32; }

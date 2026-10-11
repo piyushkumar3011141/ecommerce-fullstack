@@ -1,0 +1,29 @@
+.sign-intro {
+  padding: 16px 12px 4px;
+  text-align: center;
+}
+
+.sign-heading {
+  font-size: clamp(1.1rem, 4vw, 1.6rem);
+  margin-bottom: 12px;
+}
+
+.sign-welcome {
+  margin: 20px 0;
+  padding: 0 12px;
+}
+
+.sign-form-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 20px 12px;
+}
+
+.sign-form {
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}

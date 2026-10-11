@@ -1,0 +1,48 @@
+/* =====================================
+   CATEGORY PAGE
+===================================== */
+
+.catpage {
+    width: 100%;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Product grid ke liye shared .product-grid (index.css) use hota hai.
+   .catpage-grid purane naam ke liye alias hai. */
+.catpage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 18px;
+}
+
+/* =====================================
+   FILTERS
+===================================== */
+
+.catpage-filters {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 14px;
+    position: sticky;
+    top: calc(var(--header-h, 70px) + 16px);
+}
+
+@media (max-width: 991px) {
+    .catpage-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .catpage-filters {
+        position: static;
+        margin-bottom: 4px;
+    }
+    .catpage-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}

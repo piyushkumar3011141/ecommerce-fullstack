@@ -1,0 +1,78 @@
+/* ================= CART IMAGE ================= */
+
+.cart-image {
+  width: 150px;
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+  border-radius: 10px;
+}
+
+
+/* ================= REMOVE / WISHLIST ================= */
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ================= SELECT ================= */
+
+.form-select {
+  cursor: pointer;
+}
+
+
+/* ================= CARD HOVER ================= */
+
+.card {
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12) !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+  .cart-image {
+    width: 180px;
+    height: 180px;
+
+    margin-bottom: 20px;
+  }
+
+  .cart-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 576px) {
+
+  .cart-image {
+    width: 150px;
+    height: 150px;
+  }
+
+}

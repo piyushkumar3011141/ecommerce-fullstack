@@ -1,0 +1,180 @@
+/* =========================================
+   NAVBAR
+   Header sticky hai (Outletnavbar me), isliye content ke upar
+   marginTop jaisi hacks ki zarurat nahi: header kitna bhi lamba ho,
+   page uske neeche se hi shuru hota hai.
+========================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-nav__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 8px 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ---------- Logo ---------- */
+.logohover,
+.site-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 2px 12px;
+  border: 1.5px solid rgb(13, 110, 253);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logohover:hover {
+  color: #fff;
+  background-color: rgb(13, 110, 253);
+}
+
+/* ---------- Desktop menu ---------- */
+.site-nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.fontsize1 {
+  font-size: 16px;
+  color: #535151;
+}
+
+.hover1:hover {
+  color: #000;
+}
+
+.hover2:hover {
+  background-color: rgb(13, 110, 253);
+}
+
+/* ---------- Search ---------- */
+.site-nav__search {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #e7dddd;
+  overflow: hidden;
+}
+
+.searchicon {
+  margin-left: 16px;
+  color: #535151;
+  font-size: 18px;
+}
+
+.search-box .form-control {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  margin: 0 !important;
+  font-size: 15px;
+  background-color: #e7dddd;
+}
+
+/* ---------- Right side icons ---------- */
+.site-nav__actions {
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-nav__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.site-nav__icon-btn:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.site-nav__user-name {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.navbadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 18px;
+  background: red;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 3px 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ---------- Tablet / Mobile ---------- */
+@media (max-width: 991.98px) {
+  /* Row 1: logo + icons, Row 2: poori width ka search */
+  .site-nav__search {
+    order: 3;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-nav__row {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .logohover,
+  .site-nav__brand {
+    font-size: 16px;
+    padding: 2px 10px;
+  }
+
+  .site-nav__icon-btn {
+    min-width: 36px;
+    padding: 0 6px;
+    font-size: 19px;
+  }
+}

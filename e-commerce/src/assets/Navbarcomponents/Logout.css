@@ -1,0 +1,57 @@
+.logout-page {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* Logout Icon */
+
+.logout-icon {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f8d7da;
+
+  border-radius: 50%;
+
+  font-size: 35px;
+}
+
+
+/* Card */
+
+.logout-page .card {
+  border-radius: 12px;
+}
+
+
+/* Button */
+
+.logout-page .btn {
+  min-width: 110px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+  .logout-page {
+    min-height: 80vh;
+  }
+
+  .logout-page .card-body {
+    padding: 30px !important;
+  }
+
+  .logout-page h2 {
+    font-size: 22px;
+  }
+
+}

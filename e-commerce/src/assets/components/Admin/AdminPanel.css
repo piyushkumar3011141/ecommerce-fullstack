@@ -1,0 +1,100 @@
+.adm {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 24px clamp(12px, 2vw, 24px) 40px;
+}
+
+.adm-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  margin-bottom: 18px;
+  padding-bottom: 4px;
+}
+
+.adm-tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px 14px;
+  font-weight: 500;
+}
+
+.adm-tabs button.active {
+  background: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  /* Mobile par sirf icons, taaki sab tabs ek line me aa jayein */
+  .adm-tabs button span { display: none; }
+  .adm-tabs button { flex: 1; justify-content: center; padding: 10px; }
+}
+
+.adm-box {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.adm-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.adm-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-left-width: 4px;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.adm-card i { font-size: 22px; opacity: 0.8; }
+.adm-card__value { font-size: 22px; font-weight: 700; line-height: 1.1; }
+.adm-card__label { font-size: 13px; color: #777; }
+
+.adm-card--success { border-left-color: #198754; }
+.adm-card--primary { border-left-color: #0d6efd; }
+.adm-card--info { border-left-color: #0dcaf0; }
+.adm-card--warning { border-left-color: #ffc107; }
+.adm-card--secondary { border-left-color: #6c757d; }
+.adm-card--danger { border-left-color: #dc3545; }
+
+.adm-bar {
+  display: grid;
+  grid-template-columns: 90px 1fr 28px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.adm-bar__track { height: 10px; background: #eee; border-radius: 5px; overflow: hidden; }
+.adm-bar__fill { height: 100%; background: #0d6efd; }
+
+.adm-search { max-width: 280px; }
+
+.adm-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.adm-name { min-width: 200px; max-width: 320px; }
+
+.adm-resolved { opacity: 0.6; }
+
+.adm table th { white-space: nowrap; font-size: 13px; color: #666; }
