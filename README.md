@@ -25,7 +25,7 @@ A complete online store: **React** storefront + **Spring Boot** REST API + **MyS
 
 **Site content from the database**
 - Footer links, About / FAQ / Privacy / Terms / Returns pages, contact form, newsletter sign-up
-
+- admin@ecommerce.com | Admin@123 
 ## Tech stack
 
 | Layer | Technology |
