@@ -16,7 +16,7 @@ export default function RequireLogin({ children, admin = false }) {
       <div className="container-fluid bg-light py-5" style={{ minHeight: "60vh" }}>
         <div className="container text-center">
           <h3 className="fw-bold">Admin access only</h3>
-          <p className="text-secondary">Aapke account ko is page ki permission nahi hai.</p>
+          <p className="text-secondary">Your Account dose not allowed this page.</p>
           <button className="btn btn-danger" onClick={() => navigate("/")}>Go to home</button>
         </div>
       </div>

@@ -115,7 +115,7 @@ const Payment = () => {
       setPlaced(order);
     } catch (err) {
       console.error("Order Place Error:", err);
-      setError(getErrorMessage(err, "Order place nahi hua."));
+      setError(getErrorMessage(err, "Order not Dispatch"));
     } finally {
       setBusy(false);
     }

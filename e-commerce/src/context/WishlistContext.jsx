@@ -94,7 +94,7 @@ export function WishlistProvider({ children }) {
         console.error("Wishlist Fetch Error:", err);
         if (!cancelled) {
           setIds([]);
-          showToast(getErrorMessage(err, "Wishlist load nahi hui."));
+          showToast(getErrorMessage(err, "Wishlist can not load."));
         }
       });
 
@@ -118,7 +118,7 @@ export function WishlistProvider({ children }) {
       } catch (err) {
         console.error("Wishlist Remove Error:", err);
         setIds(previous);
-        showToast(getErrorMessage(err, "Wishlist se remove nahi hua."));
+        showToast(getErrorMessage(err, "Wishlist can not remove item."));
       }
     },
     [ids, isLoggedIn, showToast]
@@ -140,7 +140,7 @@ export function WishlistProvider({ children }) {
       } catch (err) {
         console.error("Wishlist Add Error:", err);
         setIds(previous);
-        showToast(getErrorMessage(err, "Wishlist me add nahi hua."));
+        showToast(getErrorMessage(err, "Wishlist can not add item"));
       }
     },
     [ids, isLoggedIn, removeFromWishlist, showToast]

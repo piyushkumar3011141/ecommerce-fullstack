@@ -6,12 +6,12 @@ export const API_BASE_URL =
 export const TOKEN_KEY = "ecom_token";
 export const SESSION_KEY = "ecom_session";
 
-// Bina login wali calls (login / signup) ke liye
+// For requests that do not need login (login / signup)
 export const publicApi = axios.create({
   baseURL: API_BASE_URL,
 });
 
-// Login ke baad wali saari calls ke liye (JWT automatically lagta hai)
+// For all requests after login (the JWT is attached automatically)
 const api = axios.create({
   baseURL: API_BASE_URL,
 });
@@ -33,7 +33,7 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Token expire / galat ho to user ko logout kar do
+// If the token is invalid or expired, log the user out
 api.interceptors.response.use(
   (response) => response,
   (error) => {
@@ -44,10 +44,11 @@ api.interceptors.response.use(
   }
 );
 
-// Backend ka error message nikalne ka helper
+// Helper to get a readable error message from a failed request
 export const getErrorMessage = (error, fallback = "Something went wrong.") => {
+  // No response at all: the server is down or unreachable
   if (!error.response) {
-    return "";
+    return "Cannot connect to the server. Please make sure the backend is running.";
   }
   return error.response.data?.message || fallback;
 };

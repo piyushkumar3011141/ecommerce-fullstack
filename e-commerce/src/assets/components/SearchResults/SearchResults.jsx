@@ -32,7 +32,7 @@ export default function SearchResults() {
 
         {!loading && results.length === 0 ? (
           <p className="text-secondary mt-3">
-            Koi product nahi mila. Kuch aur search karke dekho.
+           No products found. Try searching for something else.
           </p>
         ) : (
           <div className="product-grid mt-3">

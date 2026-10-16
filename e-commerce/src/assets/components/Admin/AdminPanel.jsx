@@ -44,7 +44,7 @@ function useLoader(fetcher) {
       setData(response.data);
       setError("");
     } catch (err) {
-      setError(getErrorMessage(err, "Data load nahi hua."));
+      setError(getErrorMessage(err, "Data not load"));
     }
   }, [fetcher]);
 
@@ -202,7 +202,7 @@ function ProductsTab() {
       setForm(null);
       say(form.id ? "Product updated." : "Product added.");
     } catch (err) {
-      say(getErrorMessage(err, "Product save nahi hua."), false);
+      say(getErrorMessage(err, "Product not save."), false);
     } finally {
       setBusy(false);
     }
@@ -216,14 +216,14 @@ function ProductsTab() {
       await refreshProducts();
       say("Product deleted.");
     } catch (err) {
-      say(getErrorMessage(err, "Delete nahi hua."), false);
+      say(getErrorMessage(err, "Not Delete "), false);
     }
   };
 
   const importSamples = async () => {
     if (
       products.length > 0 &&
-      !window.confirm(`Database me pehle se ${products.length} products hain. Sample products dobara import karne se duplicate banenge. Continue?`)
+      !window.confirm(`There are already ${products.length} products in the database. Re-importing the sample products will create duplicates. Continue?`)
     ) return;
 
     setBusy(true);
@@ -233,7 +233,7 @@ function ProductsTab() {
       await refreshProducts();
       say(`${response.data.length} sample products imported.`);
     } catch (err) {
-      say(getErrorMessage(err, "Import nahi hua."), false);
+      say(getErrorMessage(err, "Not Import"), false);
     } finally {
       setBusy(false);
     }

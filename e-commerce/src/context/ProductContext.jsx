@@ -25,7 +25,7 @@ export function ProductProvider({ children }) {
       setError("");
     } catch (err) {
       console.error("Products Fetch Error:", err);
-      setError(getErrorMessage(err, "Products load nahi ho paaye."));
+      setError(getErrorMessage(err, "Products can not  loading."));
     } finally {
       setLoading(false);
     }
